@@ -1,0 +1,25 @@
+# OS files (Windows/Mac junk)
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Dependencies (if you use them later)
+node_modules/
+vendor/
+
+# Environment / Secrets (VERY IMPORTANT)
+.env
+includes/config-local.php
+
+# Logs
+*.log
+
+# Uploads (user-uploaded images, etc.)
+uploads/
+
+# Temporary files
+*.tmp
+*.swp
