@@ -16,7 +16,7 @@
     <!-- Top Bar (Emergency Contact) -->
     <div class="top-bar">
         <div><i class="fas fa-map-marker-alt" style="color: var(--primary-red); margin-right: 5px;"></i> 8 Moller Street, Germiston</div>
-        <div><i class="fas fa-phone" style="color: var(--primary-red); margin-right: 5px;"></i> 24/7 Emergency: <a href="tel:+27100234999">+27 10 023 4999</a></div>
+        <div><i class="fas fa-phone" style="color: var(--primary-red); margin-right: 5px;"></i> 24/7 Emergency: <a href="tel:+27843097260">+27 84 309 7260</a></div>
     </div>
 
     <!-- Main Navigation -->
@@ -36,3 +36,8 @@
             <li><a href="/pages/request-quote.php" class="btn-quote">Request Quote</a></li>
         </ul>
     </nav>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27843097260" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 9999; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        <i class="fab fa-whatsapp"></i>
+    </a>

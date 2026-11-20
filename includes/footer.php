@@ -3,7 +3,7 @@
             
             <div style="flex: 1; min-width: 250px;">
                 <h3 style="color: var(--primary-red); margin-bottom: 15px;">NMUZA ENGINEERING</h3>
-                <p style="color: #AAAAAA; font-size: 0.9rem;">Trusted mechanical, auto-electrical, and hydraulic solutions across Gauteng. We keep your operations running.</p>
+                <p style="color: #AAAAAA; font-size: 0.9rem;">Specialized in Earthmoving Components, Field Services, Hydraulic Cylinders, Pumps and General Machining.</p>
             </div>
 
             <div style="flex: 1; min-width: 200px;">
@@ -20,8 +20,8 @@
                 <h4 style="margin-bottom: 15px;">Contact Us</h4>
                 <p style="color: #AAAAAA; font-size: 0.9rem; line-height: 1.8;">
                     <i class="fas fa-map-marker-alt" style="color: var(--primary-red); width: 20px;"></i> 8 Moller Street, Germiston, 1401<br>
-                    <i class="fas fa-phone" style="color: var(--primary-red); width: 20px;"></i> +27 10 023 4999<br>
-                    <i class="fas fa-envelope" style="color: var(--primary-red); width: 20px;"></i> info@nmuzaengineering.co.za
+                    <i class="fas fa-phone" style="color: var(--primary-red); width: 20px;"></i> +27 84 309 7260<br>
+                    <i class="fas fa-envelope" style="color: var(--primary-red); width: 20px;"></i> nelmuza77@gmail.com
                 </p>
             </div>
         </div>
@@ -31,6 +31,7 @@
         </div>
     </footer>
 
+    <!-- Link to your JavaScript -->
     <script src="/assets/js/main.js"></script>
 </body>
 </html>

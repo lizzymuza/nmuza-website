@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
 
 :root {
-    --primary-red: #D32F2F; 
-    --dark-black: #121212;  
-    --mid-grey: #4A4A4A;    
-    --light-grey: #F4F4F4;  
+    --primary-red: #E61E25; 
+    --dark-black: #0a0a0a;  
+    --mid-grey: #1f1f1f;    
+    --text-grey: #a3a3a3;
     --white: #FFFFFF;
     --font-main: 'Inter', sans-serif;
 }
@@ -17,9 +17,9 @@
 
 body {
     font-family: var(--font-main);
-    color: var(--dark-black);
     background-color: var(--white);
-    line-height: 1.6;
+    color: var(--dark-black);
+    overflow-x: hidden; /* Prevents horizontal scrolling from animations */
 }
 
 a {
@@ -27,38 +27,40 @@ a {
     color: inherit;
 }
 
-/* Header & Nav */
+/* --- HEADER (Dark Mode) --- */
 .top-bar {
     background-color: var(--dark-black);
-    color: var(--white);
-    padding: 8px 5%;
+    color: var(--text-grey);
+    padding: 10px 5%;
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
+    border-bottom: 1px solid #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .top-bar a {
-    color: var(--primary-red);
+    color: var(--white);
     font-weight: 600;
 }
 
 .navbar {
-    background-color: var(--white);
-    border-bottom: 4px solid var(--primary-red);
-    padding: 15px 5%;
+    background-color: var(--dark-black);
+    padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #222;
 }
 
 .logo {
     font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--dark-black);
+    font-weight: 900;
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -75,7 +77,10 @@ a {
 
 .nav-links a {
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    color: var(--text-grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: color 0.3s;
 }
 
@@ -85,22 +90,22 @@ a {
 
 .btn-quote {
     background-color: var(--primary-red);
-    color: var(--white);
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background 0.3s;
+    color: var(--white) !important;
+    padding: 12px 25px;
+    border-radius: 0px; /* Sharp edges for industrial feel */
+    font-weight: 800;
+    transition: transform 0.2s;
 }
 
 .btn-quote:hover {
-    background-color: #B71C1C;
-    color: var(--white);
+    transform: translateY(-2px);
 }
 
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    color: var(--white);
 }
 
 @media (max-width: 900px) {
@@ -112,12 +117,23 @@ a {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--white);
+        background-color: var(--dark-black);
         flex-direction: column;
         text-align: center;
         padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        border-bottom: 2px solid var(--primary-red);
     }
     .nav-links.active { display: flex; }
-    .nav-links li { padding: 10px 0; }
+    .nav-links li { padding: 15px 0; }
+}
+
+/* --- ANIMATION CLASSES --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
